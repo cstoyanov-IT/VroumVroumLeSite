@@ -12,7 +12,7 @@
         </div>
       </header> 
   
-      <img src="no-photo.png" alt="no photo">
+      <img src="img/no-photo.png" alt="no photo">
       <head1> Fiat 5E-tech</head1>
       <p>Ceci est une Fiat 5e</p>
       <p>Berline compacte Fiat</p>
@@ -32,9 +32,9 @@
         <li>Couleur: indeterminée</li>
         <li>Prix: 9000€</li>
 
-        <p><a href="fiat500.html"> <img class="petit_chevron" src="img/petit-chevron-gauche.png" alt="petit chevron droit"/></a>
+        <p><a href="page-voiture-hondaCRV2024.html"> <img class="petit_chevron" src="img/petit-chevron-gauche.png" alt="petit chevron droit"/></a>
             Véhicules
-            <a href="HondaCRV2024.html"> <img class="petit_chevron" src="img/petit-chevron-droit.png" alt="petit chevron droit"></a></p>
+            <a href="page-voiture-citroen-c4.html.html"> <img class="petit_chevron" src="img/petit-chevron-droit.png" alt="petit chevron droit"></a></p>
     
     <footer>
     </footer>
