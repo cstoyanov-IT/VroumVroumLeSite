@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <title>Vroum Vroum le site - contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/lightslider.css" rel="stylesheet" />
+  </head>
+
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="img/logo.svg" alt="logo du site vroum vroum"/> </a>
+  </header> 
+
+    <img src="img/icone-gmap.png" alt="icone google map"/>
+    <h1>Adress</h1>
+    <p> Vroom vroom le magasin </br> 
+        101 rue du chaton roux </br>
+        10101 Panier du chaton </br>
+        France </p>
+
+        <img src="img/icone-telephone.jpg" alt="téléphone"/>
+    <h1>Téléphone</h1>
+    </p>010101010101<p>
+
+    <img src="img/icone-email.jpg" alt="téléphone"/>  
+    <h1>email</h1>
+    <p>achete@vroom-vroom.fr</p>
+
+</body>
+
+<footer>
+</footer>
