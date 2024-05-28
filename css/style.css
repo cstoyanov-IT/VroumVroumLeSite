@@ -3,15 +3,6 @@ body {
   margin: 0 auto;
 }
 
-h1{
-  color: #960a1d;
-}
-
-.petit_chevron {
-max-width: 20px;
-max-height: 20px;
-}
-
 header img.logo {
   padding: 10px;
   max-width: 200px;
@@ -46,4 +37,25 @@ div.caption h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-/*# sourceMappingURL=style.css.map */
+.flex-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 350px 350px 350px;
+  gap: 20px;
+  background-color: DodgerBlue;
+}
+.flex-container > dl {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+h1 {
+  color: #960a1d;
+}
+
+.petit_chevron {
+  max-width: 20px;
+  max-height: 20px;
+}
