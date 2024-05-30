@@ -41,15 +41,22 @@
 
 <body>
   <header>
-    <img class="logo" src="img/logo.svg" alt="Le logo du site" />
+    <a href="#index"><img class="logo" src="img/logo.svg" alt="Le logo du site" /></a>
+    <nav>
+    <ul>
+      <li><a href="#index.html">Accueil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="contact.html">Nous contacter</a></li>
+    </ul>
+  </nav>
   </header>
-  <main>
+<main>
 
     <ul id="slider">
       <li>
         <img src="img/slider/voiture-c4.jpg" alt="Voiture Citroen C4 visuel carroussel en page d'accueil" />
         <div class="caption">
-          <h1>Citroën C4 | À partir de 19 999 €</h1>
+          <h1>Citroën C4 Hybrid | À partir de 19 999 €</h1>
         </div>
       </li>
       <li>
@@ -60,7 +67,7 @@
       </li>
       <li>
         <div class="caption">
-          <h1>Renault 5 éléctrique | À partir de 25 000 €</h1>
+          <h1>Renault 5 E-Tech | À partir de 25 000 €</h1>
         </div>
 
         <img src="img/slider/voiture-renault-5.png" alt="Voiture Renault 5 visuel carroussel en page d'accueil" />
@@ -68,23 +75,37 @@
     </ul>
     <!-- fin du slider -->
     <div id="conteneur_grille" class="flex-container">
-      <dl>
-        <dt>voiture 1</dt>
-        <dd></dd>
-      </dl>
-      <dl>
-        <dt>voiture 2</dt>
-        <dd></dd>
-      </dl>
+      <div class="conteneur_carte"> <!-- conteneur_carte-->
+        <div><img src="img/carte-citroen-c4.jpg" alt="Voiture Citroën C4"></div>
+        <div>
+          <h2>Citroën C4 Hybrid</h2>
+        </div>
+        <div class="prix"><span class="texte_prix">À partir de 19 999 €</span></div>
+      </div> <!--fin de conteneur carte-->
 
-      <dl>
-        <dt>voiture 3</dt>
-        <dd></dd>
-      </dl>
-      <dl>
-        <dt>voiture 4</dt>
-        <dd></dd>
-      </dl>
+      <div class="conteneur_carte"> <!-- conteneur_carte-->
+        <div><img src="img/carte-honda-crv.jpg" alt="Voiture Honda CRV"></div>
+        <div>
+          <h2>Honda CRV</h2>
+        </div>
+        <div class="prix"><span class="texte_prix">À partir de 30 000 €</span></div>
+      </div> <!--fin de conteneur carte-->
+
+      <div class="conteneur_carte"> <!-- conteneur_carte-->
+        <div><img src="img/carte-renault-5.jpg" alt="Voiture Renault 5 E-Tech"></div>
+        <div>
+          <h2>Renault 5 E-Tech</h2>
+        </div>
+        <div class="prix"><span class="texte_prix">À partir de 25 000 €</span></div>
+      </div> <!--fin de conteneur carte-->
+
+      <div class="conteneur_carte"> <!-- conteneur_carte-->
+        <div><img src="img/pas-de-photo.png" alt="Voiture Citroën C4"></div>
+        <div>
+          <h2>Fiat 500</h2>
+        </div>
+        <div class="prix"><span class="texte_prix">À partir de 16 000 €</span></div>
+      </div> <!--fin de conteneur carte-->
 
     </div>
     </div>

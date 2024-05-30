@@ -3,9 +3,37 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+a:hover {
+  color: #960a1d;
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
 header img.logo {
   padding: 10px;
   max-width: 200px;
+}
+header nav {
+  margin-left: auto;
+}
+header nav a {
+  font-size: 20px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+header nav ul li {
+  list-style: none;
+  padding: 15px;
 }
 
 ul#slider {
@@ -38,17 +66,40 @@ div.caption h1 {
 }
 
 .flex-container {
+  margin: 15px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 350px 350px 350px;
   gap: 20px;
-  background-color: DodgerBlue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.flex-container > dl {
-  background-color: #f1f1f1;
+.flex-container > div.conteneur_carte {
   margin: 10px;
   padding: 20px;
   font-size: 30px;
+}
+.flex-container > div.conteneur_carte img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.flex-container > div.conteneur_carte h2 {
+  font-size: 22px;
+  margin: 8px 0;
+}
+.flex-container > div.conteneur_carte .prix span.texte_prix {
+  font-size: 22px;
+  color: #807a7a;
+  font-weight: bold;
+}
+
+h1 {
+  color: #960a1d;
+}
+
+.petit_chevron {
+  max-width: 20px;
+  max-height: 20px;
 }
 
 h1 {
