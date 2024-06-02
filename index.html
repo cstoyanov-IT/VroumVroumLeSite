@@ -4,8 +4,9 @@
     <title>Vroum Vroum le site - Accueil</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/lightslider.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/accueil.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/lightslider.js"></script>
     <script src="js/slider-config.js"></script>
@@ -13,7 +14,9 @@
 
   <body>
     <header>
-      <a href="#index"><img class="logo" src="img/logo.svg" alt="Le logo du site" /></a>
+      <a href="#index"
+        ><img class="logo" src="img/logo.svg" alt="Le logo du site"
+      /></a>
       <nav>
         <ul>
           <li><a href="#index.html">Accueil</a></li>
@@ -23,16 +26,21 @@
       </nav>
     </header>
     <main>
-
       <ul id="slider">
         <li>
-          <img src="img/slider/voiture-c4.jpg" alt="Voiture Citroen C4 visuel carroussel en page d'accueil" />
+          <img
+            src="img/slider/voiture-c4.jpg"
+            alt="Voiture Citroen C4 visuel carroussel en page d'accueil"
+          />
           <div class="caption">
             <h1>Citroën C4 Hybrid | À partir de 19 999 €</h1>
           </div>
         </li>
         <li>
-          <img src="img/slider/voiture-honda-crv.png" alt="Voiture Honda CRV visuel carroussel en page d'accueil" />
+          <img
+            src="img/slider/voiture-honda-crv.png"
+            alt="Voiture Honda CRV visuel carroussel en page d'accueil"
+          />
           <div class="caption">
             <h1>Honda CRV | À partir de 30 000 €</h1>
           </div>
@@ -41,45 +49,130 @@
           <div class="caption">
             <h1>Renault 5 E-Tech | À partir de 25 000 €</h1>
           </div>
-
-          <img src="img/slider/voiture-renault-5.png" alt="Voiture Renault 5 visuel carroussel en page d'accueil" />
+          <img
+            src="img/slider/voiture-renault-5.png"
+            alt="Voiture Renault 5 visuel carroussel en page d'accueil"
+          />
         </li>
       </ul>
       <!-- fin du slider -->
-      <div id="conteneur_grille" class="flex-container">
-        <div class="conteneur_carte"> <!-- conteneur_carte-->
-          <div><img src="img/carte-citroen-c4.jpg" alt="Voiture Citroën C4"></div>
-          <div>
-            <h2>Citroën C4 Hybrid</h2>
+      <div id="conteneur_global" class="flex_row">
+        <aside>
+          <!-- DEBUT DU BLOC FILTRE-->
+          <button class="accordion">Couleurs</button>
+            <div id="myBtnContainer" class="flex_column panel">
+              <label
+                ><input
+                  type="radio"
+                  name="couleur"
+                  class="btn active"
+                  onclick="filterSelection('all')"
+                />
+                Tous
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="couleur"
+                  class="btn"
+                  onclick="filterSelection('noir')"
+                />Noir</label
+              >
+              <label>
+                <input
+                  type="radio"
+                  name="couleur"
+                  class="btn"
+                  onclick="filterSelection('rouge')"
+                />Rouge</label
+              >
+              <label>
+                <input
+                  type="radio"
+                  name="couleur"
+                  class="btn"
+                  onclick="filterSelection('jaune')"
+                />Jaune</label
+              >
+              <label>
+                <input
+                  type="radio"
+                  name="couleur"
+                  class="btn"
+                  onclick="filterSelection('bleu')"
+                />Bleu</label
+              >
+            </div>
+            <!-- fin de myBtnContainer COULEUR-->
+          <!--FIN DU BLOC FILTRE-->
+        </aside>
+        <div id="conteneur_grille">
+          <div class="conteneur_carte filterDiv rouge">
+            <!-- conteneur_carte-->
+            <div>
+              <img src="img/carte-citroen-c4.jpg" alt="Voiture Citroën C4" />
+            </div>
+            <div>
+              <h2>Citroën C4 Hybrid</h2>
+            </div>
+            <div class="prix">
+              <span class="texte_prix">À partir de 19 999 €</span>
+            </div>
           </div>
-          <div class="prix"><span class="texte_prix">À partir de 19 999 €</span></div>
-        </div> <!--fin de conteneur carte-->
+          <!--fin de conteneur carte-->
 
-        <div class="conteneur_carte"> <!-- conteneur_carte-->
-          <div><img src="img/carte-honda-crv.jpg" alt="Voiture Honda CRV"></div>
-          <div>
-            <h2>Honda CRV</h2>
+          <div class="conteneur_carte filterDiv noir">
+            <!-- conteneur_carte-->
+            <div>
+              <img src="img/carte-honda-crv.jpg" alt="Voiture Honda CRV" />
+            </div>
+            <div>
+              <h2>Honda CRV</h2>
+            </div>
+            <div class="prix">
+              <span class="texte_prix">À partir de 30 000 €</span>
+            </div>
           </div>
-          <div class="prix"><span class="texte_prix">À partir de 30 000 €</span></div>
-        </div> <!--fin de conteneur carte-->
+          <!--fin de conteneur carte-->
 
-        <div class="conteneur_carte"> <!-- conteneur_carte-->
-          <div><img src="img/carte-renault-5.jpg" alt="Voiture Renault 5 E-Tech"></div>
-          <div>
-            <h2>Renault 5 E-Tech</h2>
+          <div class="conteneur_carte filterDiv jaune">
+            <!-- conteneur_carte-->
+            <div>
+              <img
+                src="img/carte-renault-5.jpg"
+                alt="Voiture Renault 5 E-Tech"
+              />
+            </div>
+            <div>
+              <h2>Renault 5 E-Tech</h2>
+            </div>
+            <div class="prix">
+              <span class="texte_prix">À partir de 25 000 €</span>
+            </div>
           </div>
-          <div class="prix"><span class="texte_prix">À partir de 25 000 €</span></div>
-        </div> <!--fin de conteneur carte-->
+          <!--fin de conteneur carte-->
 
-        <div class="conteneur_carte"> <!-- conteneur_carte-->
-          <div><img src="img/pas-de-photo.png" alt="Voiture Citroën C4"></div>
-          <div>
-            <h2>Fiat 500</h2>
+          <div class="conteneur_carte filterDiv bleu">
+            <!-- conteneur_carte-->
+            <div>
+              <img src="img/pas-de-photo.png" alt="Voiture Citroën C4" />
+            </div>
+            <div>
+              <h2>Fiat 500</h2>
+            </div>
+            <div class="prix">
+              <span class="texte_prix">À partir de 16 000 €</span>
+            </div>
           </div>
-          <div class="prix"><span class="texte_prix">À partir de 16 000 €</span></div>
-        </div> <!-- fin de conteneur_carte-->
-      </div> <!-- fin de conteneur grille-->
-    </main> <!-- fin du main -->
+          <!-- fin de conteneur_carte-->
+        </div>
+        <!-- fin de conteneur grille-->
+      </div>
+      <!-- fin de #conteneur_global-->
+    </main>
+    <!-- fin du main -->
   </body>
-
 </html>
+
+<script src="js/filter-card.js"></script>
+<script src="js/accordion.js"></script>

@@ -36,77 +36,18 @@ header nav ul li {
   padding: 15px;
 }
 
-ul#slider {
-  list-style: none;
-}
-ul#slider li {
-  cursor: pointer;
-}
-ul#slider img {
-  display: block;
-  height: auto;
-  max-height: 100%;
-}
-
-.lightSlider > li {
-  position: relative;
-}
-
-div.caption h1 {
-  background-color: #960a1d;
-  display: inline-block;
-  vertical-align: middle;
-  max-height: 35px;
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  padding: 30px;
-  color: white;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-.flex-container {
-  margin: 15px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 350px 350px 350px;
-  gap: 20px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-.flex-container > div.conteneur_carte {
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
-.flex-container > div.conteneur_carte img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-.flex-container > div.conteneur_carte h2 {
-  font-size: 22px;
-  margin: 8px 0;
-}
-.flex-container > div.conteneur_carte .prix span.texte_prix {
-  font-size: 22px;
-  color: #807a7a;
-  font-weight: bold;
-}
-
 h1 {
   color: #960a1d;
 }
 
-.petit_chevron {
-  max-width: 20px;
-  max-height: 20px;
+.flex_row {
+  display: flex;
+  flex-direction: row;
 }
 
-h1 {
-  color: #960a1d;
+.flex_column {
+  display: flex;
+  flex-direction: column;
 }
 
-.petit_chevron {
-  max-width: 20px;
-  max-height: 20px;
-}
+/*# sourceMappingURL=style.css.map */
