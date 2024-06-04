@@ -3,7 +3,7 @@ Site d'un concessionnaire pour module HTML/CSS
 
 Groupe 1: 
   - Guillaume L'Huillier
-  - Yacinne
+  - Yacinne BOUKLIF
   - Clement Stoyanov
   - Thomas ULRICI
 
