@@ -8,6 +8,7 @@ a {
   color: black;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
+
 a:hover {
   color: #960a1d;
   text-decoration: underline;
@@ -17,16 +18,20 @@ header {
   display: flex;
   flex-direction: row;
 }
+
 header img.logo {
   padding: 10px;
   max-width: 200px;
 }
+
 header nav {
   margin-left: auto;
 }
+
 header nav a {
   font-size: 20px;
 }
+
 header nav ul {
   display: flex;
   flex-direction: row;
@@ -38,6 +43,10 @@ header nav ul li {
 
 h1 {
   color: #960a1d;
+}
+
+footer li {
+  list-style-type: square;
 }
 
 .flex_row {
