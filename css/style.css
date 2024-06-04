@@ -59,4 +59,9 @@ footer li {
   flex-direction: column;
 }
 
+.class icone {
+  max-width: 30px;
+  max-height: 30px;
+  }
+
 /*# sourceMappingURL=style.css.map */
