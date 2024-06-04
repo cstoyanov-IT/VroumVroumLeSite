@@ -1,4 +1,20 @@
-filterSelection("all")
+$("#filters :checkbox").click(function() {
+  $(".filterDiv").hide();
+  $("#filters :checkbox:checked").each(function() {
+    $("." + $(this).val()).show();
+  });
+});
+// bout de code pour cocher toute les cases grace au bouton selectionner tout
+function toggle(source) {
+  checkboxes = document.getElementsByName("case");
+  for (var i = 0, n = checkboxes.length; i < n; i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+
+// fonction filters boutons simple ou boutons radio
+
+filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -36,7 +52,7 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
+var btnContainer = document.getElementsByClassName("conteneur_filtre");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
