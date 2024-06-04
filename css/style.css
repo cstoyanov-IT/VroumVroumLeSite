@@ -1,3 +1,7 @@
+footer{
+    background-color:antiquewhite;
+}
+
 body {
   max-width: 1000px;
   margin: 0 auto;
@@ -17,6 +21,7 @@ a:hover {
 header {
   display: flex;
   flex-direction: row;
+  background-color:antiquewhite;
 }
 
 header img.logo {
