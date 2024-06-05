@@ -123,4 +123,11 @@ aside {
   font-weight: bold;
 }
 
-/*# sourceMappingURL=accueil.css.map */
+@media all and (max-width: 991px) {
+  aside {
+    margin-top: 20px;
+  }
+  ul#slider, .lSPager {
+    display: none;
+  }
+}
