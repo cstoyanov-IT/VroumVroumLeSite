@@ -66,6 +66,10 @@ nav a:hover {
     text-align: right;
   }
 
+  nav input {
+    display: block;
+  }
+
   header img.logo {
     margin-bottom: 20px;
   }
