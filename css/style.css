@@ -51,11 +51,11 @@ nav a:hover {
   color: rgb(2, 79, 247);
 }
 
-label {
+.main_pages label {
   display: none;
 }
 
-input[type="checkbox"] {
+.main_pages input[type="checkbox"] {
   display: none; /* Cette ligne permet de masquer la case à cocher */
 }
 
