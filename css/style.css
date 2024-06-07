@@ -55,7 +55,7 @@ nav a:hover {
   display: none;
 }
 
-.main_pages input[type="checkbox"] {
+.main_pages input[type="checkbox"], nav input[type="checkbox"] {
   display: none; /* Cette ligne permet de masquer la case à cocher */
 }
 
