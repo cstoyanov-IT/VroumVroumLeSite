@@ -1,0 +1,131 @@
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+a:hover {
+  color: #960a1d;
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 10px 20px;
+}
+
+header img.logo {
+  max-width: 200px;
+}
+
+nav {
+  margin: 0;
+  background: none;
+  width: auto;
+  height: auto;
+}
+
+nav .main_pages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .main_pages a {
+  width: auto;
+  margin-left: 20px;
+  height: auto;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+  color: rgb(2, 79, 247);
+}
+
+label {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none; /* Cette ligne permet de masquer la case à cocher */
+}
+
+@media all and (max-width: 991px) {
+  nav {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+
+  header img.logo {
+    margin-bottom: 20px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav .main_pages {
+    display: none;
+    flex-direction: column;
+    background: #48435c;
+  }
+
+  nav .main_pages a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-left: 0;
+    color: white;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #48435c;
+    color: white;
+    width: fit-content;
+  }
+
+  input[type="checkbox"]:checked + .main_pages {
+    display: flex;
+  }
+}
+
+footer {
+  background-color: antiquewhite;
+}
+
+footer li {
+  list-style-type: square;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.icone {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.petit_chevron {
+  max-width: 20px;
+  max-height: 20px;
+}
